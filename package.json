@@ -8,9 +8,18 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "test": "jest --runInBand",
+  "test:watch": "jest --watch",
+  "test:coverage": "jest --coverage"
+ },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
