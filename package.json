@@ -8,6 +8,11 @@
     "test": "test"
   },
   "scripts": {
+  "start": "node src/index.js",
+  "dev": "nodemon src/index.js",
+  "lint": "eslint . || true",
+  "migrate": "sequelize db:migrate",
+  "seed": "sequelize db:seed:all",
   "test": "jest --runInBand",
   "test:watch": "jest --watch",
   "test:coverage": "jest --coverage"
